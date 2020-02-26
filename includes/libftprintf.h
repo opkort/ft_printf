@@ -74,6 +74,7 @@ typedef struct				s_params
 	char					*colour;
 }							t_params;
 
+int							ft_printf(char *line, ...);
 void						between_p(char *line, int i,
 							va_list a, t_params *m);
 void						between_s(char *line, int i,
