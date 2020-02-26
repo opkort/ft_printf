@@ -19,7 +19,7 @@
 # define IS_HUNDRED(x) (x < 100 ? 0 : 1)
 # define WHILE_NOT_ZERO(x) (x > 0 ? x - 1 : 0)
 # define ISNULL(x) (x == 0 ? 0 : 1)
-# define FOR_DIMA 1444565444646
+# define FOR_MASHA 1444565444646
 # include <stdlib.h>
 # include <stdarg.h>
 # include <stdio.h>
