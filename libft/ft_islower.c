@@ -1,35 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   ft_islower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acarlett <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bdaway <bdaway@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/26 18:13:56 by acarlett          #+#    #+#             */
-/*   Updated: 2019/09/26 18:14:45 by acarlett         ###   ########.fr       */
+/*   Created: 2019/09/20 19:09:09 by bdaway            #+#    #+#             */
+/*   Updated: 2019/09/20 19:09:41 by bdaway           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		*ft_range(int min, int max)
+int	ft_islower(int c)
 {
-	int r;
-	int *b;
-	int *a;
-
-	r = max - min;
-	a = malloc(sizeof(int *) * r);
-	if (!a)
-		return (0);
-	b = a;
-	while (r != 0)
-	{
-		*a = min;
-		a++;
-		min++;
-		r--;
-	}
-	a = b;
-	return (a);
+	return (c >= 'a' && c <= 'z');
 }

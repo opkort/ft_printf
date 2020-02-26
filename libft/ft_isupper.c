@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_foreach.c                                       :+:      :+:    :+:   */
+/*   ft_isupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acarlett <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bdaway <bdaway@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/26 18:11:30 by acarlett          #+#    #+#             */
-/*   Updated: 2019/09/26 18:12:26 by acarlett         ###   ########.fr       */
+/*   Created: 2019/09/20 19:10:11 by bdaway            #+#    #+#             */
+/*   Updated: 2019/09/20 19:10:45 by bdaway           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_foreach(int *tab, int length, void (*f)(int))
+int	ft_isupper(int c)
 {
-	while (length != 0)
-	{
-		f(*tab);
-		length--;
-		tab++;
-	}
+	return (c >= 'A' && c <= 'Z');
 }
