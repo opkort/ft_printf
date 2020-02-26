@@ -6,7 +6,7 @@
 /*   By: pgenesis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 20:37:13 by pgenesis          #+#    #+#             */
-/*   Updated: 2020/02/25 20:37:15 by pgenesis         ###   ########.fr       */
+/*   Updated: 2020/02/26 06:19:34 by pgenesis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,7 +101,7 @@ void	format_f(char *line, int i, va_list a, int type)
 	m.doubl = (!ft_check_long_f(line, i) ? va_arg(a, double) :
 	va_arg(a, long double));
 	m.long_long_in = m.doubl;
-	if (ALWAYS_POZITIVE(m.long_long_in) == FOR_MASHA && ft_check_long_f(line, i))
+	if (always_pozitive(m.long_long_in) == MF && ft_check_long_f(line, i))
 		return (for_help_f(&m));
 	if (predel_f1(&m))
 		return ;

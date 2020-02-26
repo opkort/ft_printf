@@ -15,7 +15,7 @@
 void	to_u(char *line, int i, t_params m, va_list a)
 {
 	m.unsigned_long_long_in = va_arg(a, unsigned int);
-	m.f_otricatelnoe = NALICIE_MINUSA(m.unsigned_long_long_in);
+	m.f_otricatelnoe = nalicie_minusa(m.unsigned_long_long_in);
 	m.isnull = ISNULL(m.unsigned_long_long_in);
 	if (!m.isnull && m.f_check_presicion == -1 && !m.f_check_width)
 	{
@@ -29,7 +29,7 @@ void	to_u(char *line, int i, t_params m, va_list a)
 void	to_lu(char *line, int i, t_params m, va_list a)
 {
 	m.unsigned_long_long_in = (long int)va_arg(a, long);
-	m.f_otricatelnoe = NALICIE_MINUSA(m.unsigned_long_long_in);
+	m.f_otricatelnoe = nalicie_minusa(m.unsigned_long_long_in);
 	m.isnull = ISNULL(m.unsigned_long_long_in);
 	if (!m.isnull && m.f_check_presicion == -1 && !m.f_check_width)
 	{
@@ -43,7 +43,7 @@ void	to_lu(char *line, int i, t_params m, va_list a)
 void	to_llu(char *line, int i, t_params m, va_list a)
 {
 	m.unsigned_long_long_in = (unsigned long long)va_arg(a, unsigned long long);
-	m.f_otricatelnoe = NALICIE_MINUSA(m.unsigned_long_long_in);
+	m.f_otricatelnoe = nalicie_minusa(m.unsigned_long_long_in);
 	m.isnull = ISNULL(m.unsigned_long_long_in);
 	if (!m.isnull && m.f_check_presicion == -1 && !m.f_check_width)
 	{
@@ -57,7 +57,7 @@ void	to_llu(char *line, int i, t_params m, va_list a)
 void	to_hu(char *line, int i, t_params m, va_list a)
 {
 	m.unsigned_long_long_in = (short unsigned int)va_arg(a, unsigned int);
-	m.f_otricatelnoe = NALICIE_MINUSA(m.unsigned_long_long_in);
+	m.f_otricatelnoe = nalicie_minusa(m.unsigned_long_long_in);
 	m.isnull = ISNULL(m.unsigned_long_long_in);
 	if (!m.isnull && m.f_check_presicion == -1 && !m.f_check_width)
 	{
@@ -71,7 +71,7 @@ void	to_hu(char *line, int i, t_params m, va_list a)
 void	to_hhu(char *line, int i, t_params m, va_list a)
 {
 	m.unsigned_long_long_in = (unsigned char)va_arg(a, unsigned int);
-	m.f_otricatelnoe = NALICIE_MINUSA(m.unsigned_long_long_in);
+	m.f_otricatelnoe = nalicie_minusa(m.unsigned_long_long_in);
 	m.isnull = ISNULL(m.unsigned_long_long_in);
 	if (!m.isnull && m.f_check_presicion == -1 && !m.f_check_width)
 		return ;

@@ -17,7 +17,7 @@ void	ft_put_choose(t_params *m)
 	int number;
 
 	if (m->ff)
-		m->long_long_in = ALWAYS_POZITIVE(m->long_long_in);
+		m->long_long_in = always_pozitive(m->long_long_in);
 	if (m->type == 4)
 		number = number_counting(m->long_long_in);
 	else
@@ -89,7 +89,7 @@ void	print_width_1(t_params *m, int size_number, int i)
 	}
 	ft_put_choose(m);
 	while (m->f_check_width != ((m->f_check_plus || m->f_otricatelnoe) +
-				BIGGEST(size_number, m->f_check_presicion)))
+				biggest(size_number, m->f_check_presicion)))
 	{
 		ft_putchar2(' ');
 		m->f_check_width--;

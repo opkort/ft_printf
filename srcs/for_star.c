@@ -18,7 +18,7 @@ void	cont(char *line, int i, t_params *m, va_list a)
 		m->f_check_presicion = -1;
 	if (m->f_check_star && m->f_check_width < 0)
 	{
-		m->f_check_width = ALWAYS_POZITIVE(m->f_check_width);
+		m->f_check_width = always_pozitive((long long int)m->f_check_width);
 		m->f_check_minus = 1;
 	}
 	if (m->f_check_star && m->f_check_point && !m->f_check_presicion)

@@ -1,19 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar2.c                                      :+:      :+:    :+:   */
+/*   macros.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pgenesis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/25 20:45:52 by pgenesis          #+#    #+#             */
-/*   Updated: 2020/02/26 06:03:57 by pgenesis         ###   ########.fr       */
+/*   Created: 2020/02/26 06:15:27 by pgenesis          #+#    #+#             */
+/*   Updated: 2020/02/26 06:29:12 by pgenesis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libftprintf.h"
+#include "libftprintf.h"
 
-void	ft_putchar2(char c)
+long long int	always_pozitive(long long int x)
 {
-	write(1, &c, 1);
-	g_count++;
+	if (x >= 0)
+		return (x);
+	else
+		return (-x);
+}
+
+int				nalicie_minusa(long long int x)
+{
+	if (x < 0)
+		return (1);
+	else
+		return (0);
+}
+
+int				biggest(int x, int y)
+{
+	if (x > y)
+		return (x);
+	else
+		return (y);
 }

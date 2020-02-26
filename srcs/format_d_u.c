@@ -15,7 +15,7 @@
 void	print_width_more_3(t_params *m, int size_number)
 {
 	while (m->f_check_width != ((m->f_otricatelnoe || m->f_check_plus) +
-				BIGGEST(size_number, m->f_check_presicion)))
+			biggest(size_number, m->f_check_presicion)))
 	{
 		ft_putchar2(' ');
 		m->f_check_width--;

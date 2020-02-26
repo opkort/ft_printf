@@ -6,7 +6,7 @@
 /*   By: pgenesis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 20:29:00 by pgenesis          #+#    #+#             */
-/*   Updated: 2020/02/25 20:29:25 by pgenesis         ###   ########.fr       */
+/*   Updated: 2020/02/26 06:20:37 by pgenesis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void	between_d(t_params *m, char *line, int i, va_list a)
 	else if (m->f_check_short_int == 2 && m->type == 6)
 		to_hhu(line, i, *m, a);
 }
- 
+
 void	between(char *line, int i, t_params *m, va_list a)
 {
 	m->type = ft_choose_flags(line, i);

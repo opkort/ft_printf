@@ -16,13 +16,13 @@ void	goodline_e(t_params *m, char *resnew, int *len)
 {
 	int	i;
 
-	i = number_counting(ALWAYS_POZITIVE(m->long_long_in));
+	i = number_counting(always_pozitive(m->long_long_in));
 	if (m->type == 91 || m->type == 911)
 	{
 		*len = i;
-		while (ALWAYS_POZITIVE(m->long_long_in) >= 10)
+		while (always_pozitive(m->long_long_in) >= 10)
 		{
-			resnew[--i] = ALWAYS_POZITIVE(m->long_long_in) % 10 + 48;
+			resnew[--i] = always_pozitive(m->long_long_in) % 10 + 48;
 			m->long_long_in = m->long_long_in / 10;
 			m->ff++;
 		}
