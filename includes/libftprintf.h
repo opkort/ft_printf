@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libftprintf.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acarlett <acarlett@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bdaway <bdaway@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 21:36:19 by acarlett          #+#    #+#             */
-/*   Updated: 2020/02/26 06:18:23 by pgenesis         ###   ########.fr       */
+/*   Updated: 2020/02/26 06:40:01 by bdaway           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,8 @@ typedef struct				s_params
 	char					*colour;
 }							t_params;
 
+int							isNull_lli(long long x);
+int							isNull_ulli(unsigned long long x);
 void						ft_putchar2(char c);
 int							is_hundred(int x);
 int							two_or_zero(int x, int y);
